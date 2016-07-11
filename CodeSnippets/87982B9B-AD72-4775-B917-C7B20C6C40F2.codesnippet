@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jiela</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UILabel *Jla = [[UILabel alloc]initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+    Jla.text = @"";
+    Jla.textAlignment = NSTextAlignmentLeft;
+    Jla.textColor = [UIColor blackColor];
+    Jla.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+    Jla.numberOfLines = 0;
+    Jla.lineBreakMode = NSLineBreakByCharWrapping;
+    [self.view addSubview:Jla];
+    Jla.backgroundColor = [UIColor blackColor];
+    Jla.layer.borderColor = [UIColor redColor].CGColor;
+    Jla.layer.borderWidth = 1;
+    Jla.hidden = NO;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>87982B9B-AD72-4775-B917-C7B20C6C40F2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>JIELabel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

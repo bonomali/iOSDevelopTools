@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jietextde</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+#pragma mark textView Delegate
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
+        if ([text isEqualToString:@"\n"]){
+            [textView resignFirstResponder];
+        }
+    return YES;
+}
+
+-(void)textViewDidBeginEditing:(UITextView *)textView{
+    textView.userInteractionEnabled = YES;
+    [UIView animateWithDuration:0.25 animations:^{
+        self.view.transform = CGAffineTransformMakeTranslation(0,- ScreenWidth + 68);
+    }];
+    
+}
+
+- (void)textViewDidChange:(UITextView *)textView{
+    [textView scrollRangeToVisible:NSMakeRange([textView.text length]-1,0)];
+    NSRange textRange = [textView selectedRange];
+    [textView setSelectedRange:textRange];
+   // [textView setText:textView.text.disableEmoji];
+ 
+}
+
+-(void)textViewDidEndEditing:(UITextView *)textView{
+    [UIView animateWithDuration:0.25 animations:^{
+        self.view.transform = CGAffineTransformIdentity;
+    }];
+}
+
+- (CGFloat)getTextViewContentH:(UITextView *)textView {
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] &gt;= 7.0) {
+        return ceilf([textView sizeThatFits:textView.frame.size].height);
+    } else {
+        return textView.contentSize.height;
+    }
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FB20205D-3E87-44BE-8725-E613B2EBAB06</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>JIETextView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

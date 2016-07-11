@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jietf</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UITextField *Jtf = [[UITextField alloc]initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+    Jtf.delegate = (id&lt;UITextFieldDelegate&gt;)self;
+    Jtf.placeholder = @"";
+    Jtf.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+    Jtf.keyboardType = UIKeyboardTypeASCIICapable;
+    Jtf.clearButtonMode = UITextFieldViewModeWhileEditing;
+    Jtf.returnKeyType = UIReturnKeyDefault;
+    Jtf.secureTextEntry = YES;
+    [self.view addSubview:Jtf];
+    Jtf.layer.borderColor = [UIColor redColor].CGColor;
+    Jtf.layer.borderWidth = 1;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>21DADE00-D4B4-443C-9593-398DB6577167</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>JIETextField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

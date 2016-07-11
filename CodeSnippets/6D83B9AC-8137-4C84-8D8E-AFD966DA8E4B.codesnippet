@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jietestusetime</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>double StartTime = [[NSDate date] timeIntervalSince1970];
+    for (int i = 0; i &lt; 100000; i++) {
+      
+    }
+    double EndTime = [[NSDate date] timeIntervalSince1970];
+    NSLog(@"用时%f",EndTime - StartTime);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6D83B9AC-8137-4C84-8D8E-AFD966DA8E4B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>测试方法用时</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>JIETestUseTime</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ttt - swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//MARK:- UITableViewDelegate和UITableViewDataSource
+        func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+            return 10
+        }
+        
+        func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCell {
+            var cell: UITableViewCell?
+            cell = &lt;#name#&gt;.eventCell(tableView)
+            return cell!
+        }
+        
+        
+        func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat {
+            return 44
+        }
+        
+        
+        
+        
+        func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            
+        }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>57C1BB00-5B70-44B8-A96C-63D7CB5DFDDC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>ttt - swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ttt - swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

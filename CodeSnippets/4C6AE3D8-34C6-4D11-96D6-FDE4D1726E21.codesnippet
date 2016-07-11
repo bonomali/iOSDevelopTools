@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jiebu</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+    UIButton *JBtn = [[UIButton alloc]initWithFrame:CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;)];
+    [JBtn setBackgroundImage:LOADIMAGE(@"") forState:UIControlStateNormal];
+    [JBtn setTitle:@"" forState:UIControlStateNormal];
+    [JBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    JBtn.titleLabel.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+    [JBtn addTarget:self action:@selector(&lt;#selector#&gt;) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:JBtn];
+    JBtn.backgroundColor = [UIColor blackColor];
+    JBtn.layer.borderColor = [UIColor redColor].CGColor;
+    JBtn.layer.borderWidth = 1;
+    JBtn.hidden = NO;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4C6AE3D8-34C6-4D11-96D6-FDE4D1726E21</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>JIEButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

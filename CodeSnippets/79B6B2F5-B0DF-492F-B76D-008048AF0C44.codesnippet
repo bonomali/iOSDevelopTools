@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> _passwordField = [UITextField new];
+    _passwordField.placeholder = @"请填写验证码";
+    _passwordField.font = [UIFont systemFontOfSize:10];
+    _passwordField.borderStyle = UITextBorderStyleNone;
+    _passwordField.keyboardType = UIKeyboardTypeNumberPad;
+    [self.view addSubview:_passwordField];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>79B6B2F5-B0DF-492F-B76D-008048AF0C44</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

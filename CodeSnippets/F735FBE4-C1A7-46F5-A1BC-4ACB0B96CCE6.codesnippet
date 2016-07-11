@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jiefield</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark textField
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    if (range.length == 1) {
+        return YES;
+    }
+    if ([string isSpecialCharacter] || [string isEqualToString:@" "]) {
+        return NO;
+    }
+    NSMutableString *AddString = [NSMutableString stringWithFormat:@"%@%@",textField.text,string];
+    if ([AddString textLength] &gt;= 32) {
+        return NO;
+    }
+
+
+    return YES;
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F735FBE4-C1A7-46F5-A1BC-4ACB0B96CCE6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>JIETextFieldDe</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

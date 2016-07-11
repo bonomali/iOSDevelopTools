@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cdm-label</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>_&lt;#name#&gt; = [UILabel new];
+    _&lt;#name#&gt;.text = @"金币";
+    _&lt;#name#&gt;.textAlignment = NSTextAlignmentCenter;
+    _&lt;#name#&gt;.font = [UIFont systemFontOfSize:10];
+    [_&lt;#name#&gt; border:[UIColor grayColor] width:1 CornerRadius:0.1];
+    [self.contentView addSubview:_&lt;#name#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>76B70816-914F-4967-B2D4-5837C5BBDB16</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>cdm-label</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cdm-label</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

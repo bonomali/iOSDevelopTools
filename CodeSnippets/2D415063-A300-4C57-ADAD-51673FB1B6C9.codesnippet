@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cdm-textField</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>_&lt;#name#&gt; = [UITextField new];
+    _&lt;#name#&gt;.placeholder = @"&lt;#name#&gt;";
+    _&lt;#name#&gt;.font = [UIFont systemFontOfSize:10];
+    _&lt;#name#&gt;.borderStyle = UITextBorderStyleNone;
+    _&lt;#name#&gt;.keyboardType = UIKeyboardTypeNumberPad;
+    [self.view addSubview:_&lt;#name#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2D415063-A300-4C57-ADAD-51673FB1B6C9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>cdm-textField</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cdm-textField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cdm-cv</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - 懒加载
+-(UICollectionView *)coinsCollectV
+{
+    if(!_coinsCollectV){
+        UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
+        [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+        _coinsCollectV = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:flowLayout];
+        _coinsCollectV.backgroundColor = HexColor(0xefefef);
+        _coinsCollectV.userInteractionEnabled = YES;
+        _coinsCollectV.alwaysBounceVertical = YES;
+        _coinsCollectV.dataSource = (id&lt;UICollectionViewDataSource&gt;)self;
+        _coinsCollectV.delegate = (id&lt;UICollectionViewDelegate&gt;)self;
+        //注册
+        [_coinsCollectV registerClass:[MSDollarCoinsCell class] forCellWithReuseIdentifier:@"MSDollarCoinsCell"];
+
+    }
+    return _coinsCollectV;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>67C9712E-A16A-4370-9BEB-14F23990EAFE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>cdm-cv</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cdm-cv</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

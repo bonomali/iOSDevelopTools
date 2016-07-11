@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cdm-button</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>_&lt;#name#&gt; = [UIButton new];
+    [_&lt;#name#&gt; setTitle:@"赚金币" forState:UIControlStateNormal];
+    _&lt;#name#&gt;.titleLabel.textAlignment = NSTextAlignmentCenter;
+    [_&lt;#name#&gt; setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    _&lt;#name#&gt;.titleLabel.font = [UIFont systemFontOfSize:14];
+    [_&lt;#name#&gt; addTarget:self action:@selector(earnGoldClick) forControlEvents:UIControlEventTouchUpInside];
+    [_&lt;#name#&gt; border:[UIColor grayColor] width:1 CornerRadius:4];
+    [self.contentView addSubview:_&lt;#name#&gt;];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>78D23BB7-33D8-4690-AADB-C097C76C0994</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>cdm-button</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cdm-button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

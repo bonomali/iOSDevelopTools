@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazyLoad</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+/**
+ *  数据的懒加载
+ */
+- (NSArray *)&lt;#propertyName#&gt;
+{
+    if (_&lt;#property#&gt; == nil) {
+        // 初始化
+        // 1.获得plist的全路径
+        NSString *path = [[NSBundle mainBundle] pathForResource:&lt;#plistName#&gt; ofType:nil];
+        
+        // 2.加载数组
+        NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+        
+        // 3.将dictArray里面的所有字典转成模型对象,放到新的数组中
+                          NSMutableArray *models = [NSMutableArray arrayWithCapacity:dictArray.count];
+        for (NSDictionary *dict in dictArray) {
+            // 3.1.创建模型对象
+            &lt;#modelType#&gt; *&lt;#name#&gt; = [&lt;#modelType#&gt; &lt;#name#&gt;WithDict:dict];
+            
+            // 3.2.添加模型对象到数组中
+            [models addObject:&lt;#name#&gt;];
+        }
+        
+        // 4.赋值
+        _&lt;#propertyName#&gt; = models;
+    }
+    return _&lt;#propertyName#&gt;;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0193B593-CB95-40FA-9F59-60AC0CD89062</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>懒加载</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>lazyLoad</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

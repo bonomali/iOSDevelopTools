@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cdm-presentVC</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#name#&gt; *vc = [[&lt;#name#&gt; alloc] init];
+      vc.transitioningDelegate = (id&lt;UIViewControllerTransitioningDelegate&gt;) self;
+    [self presentViewController:vc animated:YES completion:nil];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>74C8A0EA-BB79-4207-930A-C0F45B85DA24</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>cdm-presentVC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cdm-presentVC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

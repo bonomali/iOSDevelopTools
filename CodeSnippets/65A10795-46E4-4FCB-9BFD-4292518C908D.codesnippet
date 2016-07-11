@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mj-&gt;replaceKey</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+(NSDictionary *)replacedKeyFromPropertyName{
+    return @{@"&lt;#newName#&gt;" : @"&lt;#replaceName#&gt;"};
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>65A10795-46E4-4FCB-9BFD-4292518C908D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mj-&gt;replaceKey</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MJ模型转换的替换key</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

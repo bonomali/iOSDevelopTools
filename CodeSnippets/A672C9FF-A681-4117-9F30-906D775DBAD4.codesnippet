@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jieal</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:&lt;#(NSString *)#&gt; message:&lt;#(NSString *)#&gt; delegate:&lt;#(id)#&gt; cancelButtonTitle:&lt;#(NSString *)#&gt; otherButtonTitles:&lt;#(NSString *), ...#&gt;, nil];
+    [alert show];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A672C9FF-A681-4117-9F30-906D775DBAD4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>JIEAlertview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
