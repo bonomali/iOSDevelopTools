@@ -3,33 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>init</string>
+	<string>cdm-initView 初始化自定义的View</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (instancetype)&lt;#name#&gt;WithDict:(NSDictionary *)dict
-{
-    return [[self alloc] initWithDict:dict];
-}
-
-- (instancetype)initWithDict:(NSDictionary *)dict
-{
-    if (self = [super init]) {
-        [self setValuesForKeysWithDictionary:dict];
+	<string>- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [self initUI];
+        [self initAutolayout];
     }
     return self;
 }
+
+- (void)initUI {
+}
+
+- (void)initAutolayout {
+    WSELF
+}
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>04CE6012-013F-416B-BC8F-48CACC2238D8</string>
+	<string>DFE4893D-9915-42AE-AEDC-5A335BF6C317</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>模型初始化常用方法</string>
+	<string>cdm-initView 初始化自定义的View</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>init</string>
+	<string>cdm-initView 初始化自定义的View</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

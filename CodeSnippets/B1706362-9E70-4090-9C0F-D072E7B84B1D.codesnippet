@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cdm-view</string>
+	<string>cdm-UIimageView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>_&lt;#name#&gt; = [UIView new];
-_&lt;#name#&gt;.backgroundColor = [UIColor lightGrayColor];
-[self.view addSubview:_&lt;#name#&gt;];
+	<string>_goldImageView = [UIImageView new];
+    _goldImageView.image = [UIImage imageNamed:@"coin"];
+    [self.contentView addSubview:_goldImageView];
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>95D79E9B-DA6C-41AD-88D9-B0CF49F5C201</string>
+	<string>B1706362-9E70-4090-9C0F-D072E7B84B1D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>cdm-view</string>
+	<string>cdm-UIimageView</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>cdm-view</string>
+	<string>cdm-UIimageView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -11,6 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>_&lt;#name#&gt; = [UILabel new];
     _&lt;#name#&gt;.text = @"金币";
+    _&lt;#name#&gt;.textColor = HexColor(0x&lt;#X#&gt;);
     _&lt;#name#&gt;.textAlignment = NSTextAlignmentCenter;
     _&lt;#name#&gt;.font = [UIFont systemFontOfSize:10];
     [_&lt;#name#&gt; border:[UIColor grayColor] width:1 CornerRadius:0.1];
