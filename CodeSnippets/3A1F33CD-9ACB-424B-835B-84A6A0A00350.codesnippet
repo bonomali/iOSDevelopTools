@@ -3,23 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mj-&gt;replaceKey</string>
+	<string>pmnetworking</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+(NSDictionary *)replacedKeyFromPropertyName{
-    return @{@"&lt;#newName#&gt;" : @"id"};
-}</string>
+	<string>NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@""] = ;
+    [PMNetworking post:@"" params:params  isSaveCache:NO success:^(id json) {
+        
+    } failure:^(NSError *error) {
+        [self showHUD:ERROR_MESSAGE de:2];
+    }];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>65A10795-46E4-4FCB-9BFD-4292518C908D</string>
+	<string>3A1F33CD-9ACB-424B-835B-84A6A0A00350</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>mj-&gt;replaceKey</string>
+	<string>PMNetworking</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MJ模型转换的替换key</string>
+	<string>PMNetworking</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

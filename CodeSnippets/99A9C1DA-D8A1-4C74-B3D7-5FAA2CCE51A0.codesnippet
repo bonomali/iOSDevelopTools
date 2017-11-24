@@ -9,23 +9,30 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+	<string>#pragma mark - UITableViewDataSource
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 5;
+}
+
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //1.创建cell
-    static NSString *ID=&lt;#ID#&gt;;
+    static NSString *ID=@"cell";
     UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:ID];
     
     if(cell==nil){
         cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    
+        
     }
     
     //2.设置cell的数据
-    
-    
     return cell;
     
 }
-</string>
+
+#pragma mark - UITableViewDelegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>99A9C1DA-D8A1-4C74-B3D7-5FAA2CCE51A0</string>
 	<key>IDECodeSnippetLanguage</key>

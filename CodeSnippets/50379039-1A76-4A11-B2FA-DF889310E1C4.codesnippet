@@ -3,23 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mj-&gt;replaceKey</string>
+	<string>spios11</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+(NSDictionary *)replacedKeyFromPropertyName{
-    return @{@"&lt;#newName#&gt;" : @"id"};
+	<string>if (@available(iOS 11.0, *)) {
+    _tableView.estimatedRowHeight = 0;
+    _tableView.estimatedSectionHeaderHeight = 0;
+    _tableView.estimatedSectionFooterHeight = 0;
+    if ([_tableView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
+        _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }
+
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>65A10795-46E4-4FCB-9BFD-4292518C908D</string>
+	<string>50379039-1A76-4A11-B2FA-DF889310E1C4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>mj-&gt;replaceKey</string>
+	<string>spios11</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MJ模型转换的替换key</string>
+	<string>spios11</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

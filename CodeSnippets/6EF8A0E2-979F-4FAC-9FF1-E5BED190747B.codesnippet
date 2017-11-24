@@ -19,6 +19,15 @@
         _tableView.delegate = (id&lt;UITableViewDelegate&gt;)self;
         _tableView.rowHeight = 60;
         _tableView.tableFooterView = [UIView new];
+        if (@available(iOS 11.0, *)) {
+            _tableView.estimatedRowHeight = 0;
+            _tableView.estimatedSectionHeaderHeight = 0;
+            _tableView.estimatedSectionFooterHeight = 0;
+            if ([_tableView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
+                _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+            }
+            
+        }
     }
     return _tableView;
 }</string>

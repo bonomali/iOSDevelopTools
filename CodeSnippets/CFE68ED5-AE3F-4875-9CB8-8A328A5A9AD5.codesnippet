@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mj-&gt;replaceKey</string>
+	<string>mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+(NSDictionary *)replacedKeyFromPropertyName{
-    return @{@"&lt;#newName#&gt;" : @"id"};
-}</string>
+	<string>// MARK:- </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>65A10795-46E4-4FCB-9BFD-4292518C908D</string>
+	<string>CFE68ED5-AE3F-4875-9CB8-8A328A5A9AD5</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>mj-&gt;replaceKey</string>
+	<string>mark</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MJ模型转换的替换key</string>
+	<string>mark</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
